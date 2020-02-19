@@ -1,0 +1,18 @@
+resources:
+  repositories:
+
+  - repository: MyGitHubRepo1 # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: test
+    name: srkaranam/Test2
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: MyGitHubRepo1
+
+
+- script: dir $(Build.SourcesDirectory)
