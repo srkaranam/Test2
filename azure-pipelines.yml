@@ -20,6 +20,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self
 - checkout: MyGitHubRepo3
 - checkout: MyGitHubRepo2
 - checkout: MyGitHubRepo
