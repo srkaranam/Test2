@@ -13,6 +13,7 @@ resources:
     type: github
     endpoint: test
     name: srkaranam/Test
+    
 trigger:
 - master
 
@@ -23,4 +24,5 @@ steps:
 - checkout: MyGitHubRepo2
 - checkout: MyGitHubRepo1
 - checkout: MyGitHubRepo
+
 - script: dir $(Build.SourcesDirectory)
