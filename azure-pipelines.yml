@@ -1,14 +1,13 @@
 resources:
   repositories:
-
+  - repository: MyGitHubRepo3 # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: test
+    name: srkaranam/Test3
   - repository: MyGitHubRepo2 # The name used to reference this repository in the checkout step
     type: github
     endpoint: test
     name: srkaranam/Test2
-  - repository: MyGitHubRepo1 # The name used to reference this repository in the checkout step
-    type: github
-    endpoint: test
-    name: srkaranam/Test1
   - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
     type: github
     endpoint: test
